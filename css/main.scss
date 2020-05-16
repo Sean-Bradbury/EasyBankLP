@@ -38,7 +38,7 @@ body {
 
 .secondary-heading {
   font-weight: 400;
-  font-size: 1.9rem;
+  font-size: 2.5rem;
   color: $darkBlue;
   padding-bottom: 2rem;
 }
@@ -54,6 +54,7 @@ body {
   font-size: 1.1rem;
   padding-bottom: 2rem;
   color: $grayishBlue;
+  line-height: 1.3;
 }
 
 // Utilities
@@ -152,6 +153,14 @@ body {
     &-a {
       flex-basis: 40%;
       padding: 10% 0;
+
+      .primary-heading {
+        width: 80%;
+      }
+
+      .lead {
+        width: 85%;
+      }
     }
 
     &-b {
@@ -204,7 +213,12 @@ body {
 
       .usp-bucket {
         .bucket-img {
-          padding-bottom: 1rem;
+          padding-bottom: 2rem;
+        }
+
+        .usp-bucket-text {
+          font-size: 0.9rem;
+          line-height: 1.4;
         }
       }
     }
@@ -228,7 +242,7 @@ body {
         background-color: $white;
 
         .article-img-holder {
-          height: 165px;
+          height: 200px;
           width: auto;
           overflow: hidden;
           margin-bottom: 1rem;
@@ -324,3 +338,5 @@ body {
 }
 
 @import "mobile";
+@import "tablet";
+@import "widescreen";

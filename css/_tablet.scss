@@ -1,0 +1,127 @@
+@media only screen and (min-width: 501px) and (max-width:768px) {
+
+  // Nav
+  #nav {
+    z-index: 3;
+
+    .nav {
+      align-items: center;
+      position: relative;
+
+      .nav-links {
+        display: none;
+      }
+
+      .btn-nav {
+        display: none;
+      }
+
+      .hamburger-container {
+        display: block;
+        padding: 0.5rem 0.75rem;
+        background: url(/images/icon-hamburger.svg);
+        background-position: center;
+        background-size: cover;
+        justify-self: end;
+        position: absolute;
+        right: 5%;
+      }
+
+      .hamburger-container-close {
+        padding: 0.5rem 0.75rem;
+        background: url(/images/icon-close.svg);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .nav-links-mobile {
+        display: block;
+        position: absolute;
+        top: 90px;
+        margin: auto;
+        background-color: #fff;
+        width: 90%;
+        height: 300px;
+        padding: 1rem;
+        border-radius: 15px;
+        z-index: 3;
+        left: 5%;
+
+        .nav-link {
+          display: block;
+          text-align: center;
+          padding: 1rem;
+          margin: 0;
+
+          &:hover {
+            .nav-hover {
+              display: none;
+            }
+          }
+
+          a {
+            font-size: 1.1rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  // Header
+  #header {
+
+    .header-nav-overlay-active {
+      height: 1000px;
+      width: 120%;
+      left: -20%;
+      background: linear-gradient(180deg, $darkBlue 0%, rgba(196, 196, 196, 0) 100%);
+      background-position: center;
+      background-size: cover;
+      z-index: 2;
+      top: -100px;
+      position: absolute;
+    }
+  }
+
+  // Why-choose-us
+  #why-choose-us {
+    .why-choose-us {
+      .usp-buckets {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4rem;
+      }
+    }
+  }
+
+  // Latest articles
+  #latest-articles {
+    .latest-articles {
+      .article-buckets {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4rem;
+      }
+    }
+  }
+
+  // Footer
+  #footer {
+    .footer {
+      &-a {
+        &-m {
+          display: none;
+        }
+
+        &-r {
+          display: none;
+        }
+      }
+
+      &-b {
+        .copyright {
+          justify-self: end;
+        }
+      }
+    }
+  }
+}
