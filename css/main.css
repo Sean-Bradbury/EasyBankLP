@@ -392,7 +392,7 @@ body {
     -ms-grid-column-align: end;
         justify-self: end;
     position: absolute;
-    right: 5%;
+    right: 10%;
   }
   #nav .nav .hamburger-container-close {
     padding: 0.5rem 0.75rem;
@@ -462,6 +462,10 @@ body {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: text;
+  }
+  #header .header-a .primary-heading,
+  #header .header-a .lead {
+    width: 100%;
   }
   #header .header-b {
     position: relative;
