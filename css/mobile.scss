@@ -1,0 +1,236 @@
+@media only screen and (max-width: 500px) {
+  .text-center-m {
+    text-align: center;
+  }
+
+  .container-m {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+
+  .primary-heading {
+    font-size: 2rem;
+  }
+
+  // Nav
+  #nav {
+    z-index: 3;
+
+    .nav {
+      align-items: center;
+      position: relative;
+
+      .nav-links {
+        display: none;
+      }
+
+      .btn-nav {
+        display: none;
+      }
+
+      .hamburger-container {
+        display: block;
+        padding: 0.5rem 0.75rem;
+        background: url(/images/icon-hamburger.svg);
+        background-position: center;
+        background-size: cover;
+        justify-self: end;
+        position: absolute;
+        right: 5%;
+      }
+
+      .hamburger-container-close {
+        padding: 0.5rem 0.75rem;
+        background: url(/images/icon-close.svg);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .nav-links-mobile {
+        display: block;
+        position: absolute;
+        top: 90px;
+        margin: auto;
+        background-color: #fff;
+        width: 90%;
+        height: 300px;
+        padding: 1rem;
+        border-radius: 15px;
+        z-index: 3;
+        left: 5%;
+
+        .nav-link {
+          display: block;
+          text-align: center;
+          padding: 1rem;
+          margin: 0;
+
+          &:hover {
+            .nav-hover {
+              display: none;
+            }
+          }
+
+          a {
+            font-size: 1.1rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  // Header
+  #header {
+    background-color: $veryLightGray;
+
+    .header-nav-overlay-active {
+      height: 1000px;
+      width: 100%;
+      background: linear-gradient(180deg, $darkBlue 0%, rgba(196, 196, 196, 0) 100%);
+      background-position: center;
+      background-size: cover;
+      z-index: 2;
+      top: -100px;
+      position: absolute;
+    }
+
+    .container-m {
+      padding-top: 0;
+    }
+
+    .container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .header {
+      display: grid;
+      grid-template-areas:
+        "image"
+        "text";
+      align-content: center;
+      height: 100%;
+      padding: 0;
+
+      &-a {
+        padding: 0 10%;
+        padding-bottom: 10%;
+        grid-area: text;
+      }
+
+      &-b {
+        position: relative;
+        padding: 0;
+        grid-area: image;
+        width: 100%;
+        height: 320px;
+
+        .header-mockups-bg-mobile {
+          display: block;
+          position: relative;
+          top: -40%;
+          width: 100%;
+        }
+
+        .header-mockups-bg {
+          display: none;
+        }
+
+        .header-mockups {
+          position: absolute;
+          top: -52%;
+          right: 3%;
+          z-index: 1;
+          height: auto;
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  // Why Choose Us
+  #why-choose-us {
+    .why-choose-us {
+      .lead {
+        width: 100%;
+      }
+
+      .container {
+        padding: 10%;
+      }
+
+      .usp-buckets {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  // Latest Articles
+  #latest-articles {
+    .latest-articles {
+      .article-buckets {
+        grid-template-columns: 1fr;
+
+        .article-bucket {
+          .article-img-holder {
+            .article-img:first-child {
+              height: 140%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Footer
+  #footer {
+    padding: 0;
+
+    .footer {
+      flex-direction: column;
+
+      &-a {
+        flex-basis: 100%;
+        grid-template-columns: 1fr;
+
+        &-l {
+          .logo {
+            display: block;
+            padding-bottom: 1rem;
+          }
+
+          .social-links {
+            position: relative;
+
+            .social-icon {
+              padding: 0.4rem;
+            }
+          }
+        }
+
+        &-m {
+          padding-top: 1rem;
+        }
+
+        &-r {
+          padding-bottom: 1rem;
+        }
+      }
+
+      &-b {
+        align-items: center;
+        padding-top: 1rem;
+
+        .btn,
+        .copyright {
+          float: none;
+        }
+
+        .copyright {
+          padding-top: 2rem;
+        }
+      }
+    }
+  }
+}
